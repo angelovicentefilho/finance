@@ -1,6 +1,7 @@
 # Login do usuário
 ___
 
+```mermaid
 flowchart TD
     A[Início] --> B(Usuário insere credenciais)
     B --> C{Credenciais válidas?}
@@ -11,3 +12,4 @@ flowchart TD
     F -->|Sim| G[Salvar informações de login]
     F -->|Não| H[Tela principal do sistema]
     G --> H
+```
