@@ -6,7 +6,7 @@ flowchart TD
     D --> E{Ativos encontrados?}
     E -->|Sim| F[Exibir lista de ativos encontrados]
     F --> G[Tela de resultados da busca]
-    E -->|Não| H["Exibir mensagem de \"Nenhum resultado encontrado\""]
+    E -->|Não| H[Exibir mensagem de 'Nenhum resultado encontrado']
     H --> G
     C -->|Não| G[Tela de busca de ativos]
 ```
