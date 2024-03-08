@@ -1,10 +1,10 @@
 ```mermaid
 flowchart TD
-    A[Início] --> B(Usuário acessa opção para visualizar histórico de transações)
-    B --> C{Histórico disponível?}
-    C -->|Sim| D[Exibir histórico de transações]
-    D --> E[Tela de histórico de transações]
-    C -->|Não| F[Exibir mensagem de "Nenhum histórico disponível"]
-    F --> E
+    A[Início] --> B(Sistema detecta mudança de preço)
+    B --> C{Mudança atende critérios de alerta?}
+    C -->|Sim| D[Enviar notificação de alerta ao usuário]
+    D --> E[Usuário recebe notificação]
+    E --> F(Término)
+    C -->|Não| F
 
 ```

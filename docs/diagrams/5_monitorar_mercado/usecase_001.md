@@ -1,14 +1,9 @@
 ```mermaid
 flowchart TD
-    A[Início] --> B(Usuário seleciona opção para registrar compra)
-    B --> C{Ativo selecionado?}
-    C -->|Sim| D[Definir quantidade e preço de compra]
-    D --> E{Informações válidas?}
-    E -->|Sim| F[Registrar compra de ativo]
-    F --> G[Atualizar portfólio]
-    G --> H[Tela principal do portfólio]
-    E -->|Não| I[Exibir mensagem de erro]
-    I --> D
-    C -->|Não| H[Tela principal do portfólio]
-
+    A[Início] --> B(Usuário acessa opção para visualizar alertas ativos)
+    B --> C{Existem alertas ativos?}
+    C -->|Sim| D[Exibir lista de alertas ativos]
+    D --> E[Tela de visualização de alertas ativos]
+    C -->|Não| F[Exibir mensagem de 'Nenhum alerta ativo']
+    F --> E
 ```
