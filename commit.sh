@@ -7,3 +7,5 @@ git push
 git checkout develop
 git merge main
 git push
+
+git checkout main
