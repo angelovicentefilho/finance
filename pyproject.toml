@@ -18,6 +18,7 @@ pandas-datareader = "*"
 matplotlib = "*"
 seaborn = "*"
 plotly = "*"
+alembic = "^1.13.1"
 
 
 [tool.poetry.group.dev.dependencies]
