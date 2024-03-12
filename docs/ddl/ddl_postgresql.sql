@@ -56,7 +56,7 @@ CREATE TABLE "asset_price_history" (
     FOREIGN KEY ("asset_id") REFERENCES Asset(id)
 );
 
-CREATE TABLE "AssetProjection" (
+CREATE TABLE "asset_projection" (
     id SERIAL PRIMARY KEY,
     "asset_id" INT NOT NULL,
     "projectionDate" TIMESTAMP NOT NULL,
