@@ -7,3 +7,8 @@ This software is the confidential and proprietary information of J-Tech.
 Information and shall use it only in accordance with the terms of the
 license agreement you entered into with J-Tech.
 """
+from src.schemas.assets import AssetBase
+
+
+class AssetCreate(AssetBase):
+    pass
