@@ -5,6 +5,20 @@ from sqlalchemy import pool
 
 from alembic import context
 
+from src.db.base_class import Base
+from src.models.user import User
+from src.models.portfolio import Portfolio
+from src.models.price_alert import PriceAlert
+from src.models.asset import Asset
+from src.models.user_preferences import UserPreferences
+from src.models.audity_log import ActivityLog
+from src.models.asset_projection import AssetProjection
+from src.models.asset_price_history import AssetPriceHistory
+from src.models.portfolio_asset_details import PortfolioAssetDetails
+from src.models.transaction import Transaction
+
+target_metadata = Base.metadata
+
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.
 config = context.config
@@ -14,11 +28,12 @@ config = context.config
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
 
+
 # add your model's MetaData object here
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-target_metadata = None
+
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
