@@ -8,7 +8,6 @@ Information and shall use it only in accordance with the terms of the
 license agreement you entered into with J-Tech.
 """
 from sqlalchemy.orm import relationship
-
 from src.db.base_class import Base
 from sqlalchemy import Column, Integer, String
 
@@ -25,11 +24,4 @@ class User(Base):
     portfolios = relationship("Portfolio", back_populates="user")
     alerts = relationship("PriceAlert", back_populates="user")
     preferences = relationship("UserPreferences", back_populates="user", uselist=False)
-    activities = relationship("ActivityLog", back_populates="user")
-
-
-from src.models.portfolio import Portfolio
-from src.models.price_alert import PriceAlert
-
-User.portfolios = relationship("Portfolio", back_populates="user")
-User.alerts = relationship("PriceAlert", back_populates="user")
+    activities = relationship("ActivityLogs", back_populates="user")

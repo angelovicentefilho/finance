@@ -12,7 +12,7 @@ from sqlalchemy.orm import relationship
 from src.db.base_class import Base
 
 
-class ActivityLog(Base):
+class ActivityLogs(Base):
     __tablename__ = 'activity_logs'
 
     id = Column(Integer, primary_key=True, index=True)

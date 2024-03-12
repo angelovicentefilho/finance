@@ -11,7 +11,7 @@ from src.models.portfolio import Portfolio
 from src.models.price_alert import PriceAlert
 from src.models.asset import Asset
 from src.models.user_preferences import UserPreferences
-from src.models.audity_log import ActivityLog
+from src.models.activity_logs import ActivityLogs
 from src.models.asset_projection import AssetProjection
 from src.models.asset_price_history import AssetPriceHistory
 from src.models.portfolio_asset_details import PortfolioAssetDetails
