@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "finance"
+version = "0.1.0"
+description = ""
+authors = ["Angelo Vicente <angelo.vicente@veolia.com>"]
+readme = "README.md"
+packages = [
+    { include = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+yfinance = "*"
+requests = "*"
+pandas = "*"
+numpy = "*"
+pandas-datareader = "*"
+matplotlib = "*"
+seaborn = "*"
+plotly = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
